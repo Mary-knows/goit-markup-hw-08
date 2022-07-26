@@ -1,0 +1,41 @@
+.footer-sub {
+    margin-left: auto;
+}
+
+.footer-sub__header {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.footer-form {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-form__email {
+    padding: 15px 16px;
+    margin-right: 12px;
+    width: 358px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--white-color);
+    background-color: var(--background-darkgray-color);
+}
+
+.footer-form__button {
+    display: flex;
+    padding: 10px 29px;
+}
+
+.footer-form__icon {
+    margin-left: 10px;
+}

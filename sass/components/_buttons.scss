@@ -1,0 +1,32 @@
+.btn {
+    align-items: center;
+    text-align: center;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+            background-color: var(--primery-button-color);
+        }
+}
+
+.hero__btn {
+    padding: 10px 32px;
+    margin-top: 30px;
+}
+
+.callback-form__btn {
+    padding: 10px 56px;
+}
