@@ -1,18 +1,31 @@
 .contact-nav {
-    display: flex;
-    margin-left: auto;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: auto;
+    }
 }
 
 .contact-nav__item:not(:last-child) {
-    margin-right: 50px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
 }
 
 .contact-nav__link {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
@@ -24,6 +37,17 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 

@@ -15,6 +15,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .icon {
     fill: currentColor;
 }

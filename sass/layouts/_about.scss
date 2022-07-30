@@ -1,3 +1,13 @@
+.about {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.about__list {
+    --items: 3;
+}
+
 .about__item {
     position: relative;
 }

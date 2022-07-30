@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
@@ -19,12 +19,40 @@
 <body>
     <header class="header">
         <div class="container main-nav">
+            <a href="./index.html" class="logo header__logo">Web<span class="logo--dark">Studio</span></a>
+            <button class="mobile-btn" type="button" data-menu-button>
+                <svg class="icon" width="24" height="16" aria-label="Перемикач мобільного меню">
+                    <use class="icon-mobile-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+                    <use class="icon-mobile-close" href="./images/icons.svg#icon-mobile-close"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <ul class="mobile-menu-nav">
+                    <li class="mobile-menu-nav__item"><a href="./index.html" class="mobile-menu-nav__link">Студія</a></li>
+                    <li class="mobile-menu-nav__item"><a href="./portfolio.html" class="mobile-menu-nav__link mobile-menu-nav__link--current">Портфоліо</a></li>
+                    <li class="mobile-menu-nav__item"><a href="" class="mobile-menu-nav__link">Контакти</a></li>
+                </ul>
+            
+                <ul class="mobile-menu-contact">
+                    <li class="mobile-menu-contact__item"><a href="tel:+380961111111"
+                            class="mobile-menu-contact__link mobile-menu-contact__link--tel">+38 096 111 11 11</a></li>
+                    <li class="mobile-menu-contact__item"><a href="mailto:info@devstudio.com"
+                            class="mobile-menu-contact__link mobile-menu-contact__link--mail">info@devstudio.com</a></li>
+                </ul>
+            
+                <ul class="mobile-menu-social">
+                    <li class="mobile-menu-social__item"><a href="" class="mobile-menu-social__link">Instagram</a></li>
+                    <li class="mobile-menu-social__item"><a href="" class="mobile-menu-social__link">Twitter</a></li>
+                    <li class="mobile-menu-social__item"><a href="" class="mobile-menu-social__link">Facebook</a></li>
+                    <li class="mobile-menu-social__item"><a href="" class="mobile-menu-social__link">LinkedIn</a></li>
+                </ul>
+            </div>
+
             <nav class="nav">
-                <a href="./index.html" class="logo">Web<span class="logo--dark">Studio</span></a>
                 <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
                 </ul>
             </nav>
             
@@ -53,10 +81,10 @@
                             <button class="filter__btn filter__btn--current" type="button">Все</button>
                         </li>
                         <li class="filter__item">
-                            <button class="filter__btn" type="button">Веб-сайты</button>
+                            <button class="filter__btn" type="button">Веб-сайти</button>
                         </li>
                         <li class="filter__item">
-                            <button class="filter__btn" type="button">Приложения</button>
+                            <button class="filter__btn" type="button">Додатки</button>
                         </li>
                         <li class="filter__item">
                             <button class="filter__btn" type="button">Дизайн</button>
@@ -70,14 +98,21 @@
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/technocrack.jpg" alt="Пример сайта" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/technocrack-l.webp 1x, ./images/portfolio/technocrack-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/technocrack-l.jpg 1x, ./images/portfolio/technocrack-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/technocrack-m.webp 1x, ./images/portfolio/technocrack-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/technocrack-m.jpg 1x, ./images/portfolio/technocrack-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/technocrack-s.webp 1x, ./images/portfolio/technocrack-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/technocrack-s.jpg 1x, ./images/portfolio/technocrack-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/technocrack-s.jpg" alt="Зразок сайту" width="450" height="294">
+                                    </picture>
+
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                 </div>
-                                
                                 <div class="examples-name">
                                     <h2 class="examples-title">Технокряк</h2>
                                     <p class="examples-text">Веб-сайт</p>
@@ -87,11 +122,17 @@
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/new-orleans-vs-golden-star.jpg" alt="Постер с баскетболистами" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/orleans-l.webp 1x, ./images/portfolio/orleans-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/orleans-l.jpg 1x, ./images/portfolio/orleans-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/orleans-m.webp 1x, ./images/portfolio/orleans-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/orleans-m.jpg 1x, ./images/portfolio/orleans-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/orleans-s.webp 1x, ./images/portfolio/orleans-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/orleans-s.jpg 1x, ./images/portfolio/orleans-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/orleans-s.jpg" alt="Постер з баскетболістами" width="450" height="294">
+                                    </picture>
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                                     </div>
                                 </div>
                                 <div class="examples-name">
@@ -103,31 +144,43 @@
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/restaurant-seafood.jpg" alt="Рыбный ресторан (лого)" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/seafood-l.webp 1x, ./images/portfolio/seafood-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/seafood-l.jpg 1x, ./images/portfolio/seafood-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/seafood-m.webp 1x, ./images/portfolio/seafood-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/seafood-m.jpg 1x, ./images/portfolio/seafood-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/seafood-s.webp 1x, ./images/portfolio/seafood-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/seafood-s.jpg 1x, ./images/portfolio/seafood-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/seafood-s.jpg" alt="Логотип рибного ресторану" width="450" height="294">
+                                    </picture>
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                                     </div>
                                 </div>
                                 <div class="examples-name">
                                     <h2 class="examples-title">Ресторан <span lang="en">Seafood</span></h2>
-                                    <p class="examples-text">Приложение</p>
+                                    <p class="examples-text">Додаток</p>
                                 </div>
                             </a>
                         </li>
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/project-prime.jpg" alt="Наушники" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/prime-l.webp 1x, ./images/portfolio/prime-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/prime-l.jpg 1x, ./images/portfolio/prime-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/prime-m.webp 1x, ./images/portfolio/prime-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/prime-m.jpg 1x, ./images/portfolio/prime-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/prime-s.webp 1x, ./images/portfolio/prime-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/prime-s.jpg 1x, ./images/portfolio/prime-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/prime-s.jpg" alt="Навушники" width="450" height="294">
+                                    </picture>
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                                     </div>
                                 </div>
                                 <div class="examples-name">
-                                    <h2 class="examples-title">Проект <span lang="en">Prime</span></h2>
+                                    <h2 class="examples-title">Проєкт <span lang="en">Prime</span></h2>
                                     <p class="examples-text">Маркетинг</p>
                                 </div>  
                             </a>
@@ -135,28 +188,39 @@
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/boxes-project.jpg" alt="Коробки" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/boxes-l.webp 1x, ./images/portfolio/boxes-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/boxes-l.jpg 1x, ./images/portfolio/boxes-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/boxes-m.webp 1x, ./images/portfolio/boxes-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/boxes-m.jpg 1x, ./images/portfolio/boxes-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/boxes-s.webp 1x, ./images/portfolio/boxes-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/boxes-s.jpg 1x, ./images/portfolio/boxes-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/boxes-s.jpg" alt="Коробки" width="450" height="294">
+                                    </picture>
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                                     </div>
                                 </div>
                                 <div class="examples-name">
-                                    <h2 class="examples-title">Проект <span lang="en">Boxes</span></h2>
-                                    <p class="examples-text">Приложение</p>
+                                    <h2 class="examples-title">Проєкт <span lang="en">Boxes</span></h2>
+                                    <p class="examples-text">Додаток</p>
                                 </div>
-                                
                             </a>
                         </li>
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/inspiration-has-no-borders.jpg" alt="Монитор" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/inspiration-l.webp 1x, ./images/portfolio/inspiration-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/inspiration-l.jpg 1x, ./images/portfolio/inspiration-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/inspiration-m.webp 1x, ./images/portfolio/inspiration-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/inspiration-m.jpg 1x, ./images/portfolio/inspiration-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/inspiration-s.webp 1x, ./images/portfolio/inspiration-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/inspiration-s.jpg 1x, ./images/portfolio/inspiration-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/inspiration-s.jpg" alt="Монітор" width="450" height="294">
+                                    </picture>
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                                     </div>
                                 </div>
                                 <div class="examples-name">
@@ -169,32 +233,43 @@
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/limited-edition.jpg" alt="Журнал" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/limited-l.webp 1x, ./images/portfolio/limited-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/limited-l.jpg 1x, ./images/portfolio/limited-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/limited-m.webp 1x, ./images/portfolio/limited-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/limited-m.jpg 1x, ./images/portfolio/limited-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/limited-s.webp 1x, ./images/portfolio/limited-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/limited-s.jpg 1x, ./images/portfolio/limited-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/limited-s.jpg" alt="Журнал" width="450" height="294">
+                                    </picture>
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                                     </div>
                                 </div>
                                 <div class="examples-name">
-                                    <h2 class="examples-title">Издание <span lang="en">Limited Edition</span></h2>
+                                    <h2 class="examples-title">Видання <span lang="en">Limited Edition</span></h2>
                                     <p class="examples-text">Дизайн</p>
                                 </div>
-                                
                             </a>
                         </li>
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/lab-project.jpg" alt="Лейбл" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/lab-l.webp 1x, ./images/portfolio/lab-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/lab-l.jpg 1x, ./images/portfolio/lab-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/lab-m.webp 1x, ./images/portfolio/lab-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/lab-m.jpg 1x, ./images/portfolio/lab-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/lab-s.webp 1x, ./images/portfolio/lab-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/lab-s.jpg 1x, ./images/portfolio/lab-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/lab-s.jpg" alt="Лейбл" width="450" height="294">
+                                    </picture>
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                                     </div>
                                 </div>
                                 <div class="examples-name">
-                                    <h2 class="examples-title">Проект <span lang="en">LAB</span></h2>
+                                    <h2 class="examples-title">Проєкт <span lang="en">LAB</span></h2>
                                     <p class="examples-text">Маркетинг</p>
                                 </div>
                                 
@@ -203,16 +278,22 @@
                         <li class="item">
                             <a class="example-item" href="">
                                 <div class="example-img-overlay">
-                                    <img class="example-img" src="./images/Portfolio/growing-business.jpg" alt="Ноутбук" width="370">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/growing-l.webp 1x, ./images/portfolio/growing-l@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 1200px)" srcset="./images/portfolio/growing-l.jpg 1x, ./images/portfolio/growing-l@2x.jpg 2x" type="image/jpg">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/growing-m.webp 1x, ./images/portfolio/growing-m@2x.webp 2x" type="image/webp">
+                                        <source media="(min-width: 768px)" srcset="./images/portfolio/growing-m.jpg 1x, ./images/portfolio/growing-m@2x.jpg 2x" type="image/jpg">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/growing-s.webp 1x, ./images/portfolio/growing-s@2x.webp 2x" type="image/webp">
+                                        <source media="(max-width: 767px)" srcset="./images/portfolio/growing-s.jpg 1x, ./images/portfolio/growing-s@2x.jpg 2x" type="image/jpg">
+                                        <img class="example-img" src="./images/portfolio/growing-s.jpg" alt="Ноутбук" width="450" height="294">
+                                    </picture>
                                     <div class="example-overlay">
-                                        <p class="example-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
-                                            это позволит посетителю получить
-                                            исчерпывающие сведения <br> о компании или частном лице.</p>
+                                        <p class="example-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                                     </div>
                                 </div>
                                 <div class="examples-name">
                                     <h2 class="examples-title"><span lang="en">Growing Business</span></h2>
-                                    <p class="examples-text">Приложение</p>
+                                    <p class="examples-text">Додаток</p>
                                 </div>
                                 
                             </a>
@@ -229,39 +310,39 @@
             <div class="footer__address">
                 <a href="./index.html" class="logo footer__logo">Web<span class="logo--light">Studio</span></a>
                 <address class="address">
-                    <p class="footer__location">г. Киев, пр-т Леси Украинки, 26</p>
+                    <p class="footer__location">м. Київ, пр-т Лесі Українки, 26</p>
                     <ul class="footer__contact">
                         <li><a href="mailto:info@example.com" class="footer__contact-link">info@example.com</a></li>
                         <li><a href="tel:+380991111111" class="footer__contact-link">+38 099 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
-            <div>
-                <h3 class="footer-join">присоединяйтесь</h3>
+            <div class="footer-join">
+                <h3 class="footer-join__text">приєднуйтесь</h3>
                 <ul class="social-networks">
                     <li class="social-networks__item">
-                        <a class="social-networks__link link-footer" href="http://" aria-label="instagram">
+                        <a class="social-networks__link link-footer" href="https://www.instagram.com/" aria-label="instagram">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-networks__item">
-                        <a class="social-networks__link link-footer" href="http://" aria-label="twitter">
+                        <a class="social-networks__link link-footer" href="https://twitter.com/" aria-label="twitter">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-networks__item">
-                        <a class="social-networks__link link-footer" href="http://" aria-label="facebook">
+                        <a class="social-networks__link link-footer" href="https://www.facebook.com/" aria-label="facebook">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-networks__item">
-                        <a class="social-networks__link link-footer" href="http://" aria-label="linkedin">
+                        <a class="social-networks__link link-footer" href="https://www.linkedin.com/" aria-label="linkedin">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
@@ -270,10 +351,10 @@
                 </ul>
             </div>
             <div class="footer-sub">
-                <h3 class="footer-sub__header">Подпишитесь на рассылку</h3>
+                <h3 class="footer-sub__header">Підпишіться на розсилку</h3>
                 <form class="footer-form">
                     <input class="footer-form__email" type="email" name="email" placeholder="E-mail">
-                    <button class="footer-form__button" type="submit">Подписаться
+                    <button class="btn footer-form__button" type="submit">Підписатися
                         <svg class="footer-form__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -283,6 +364,8 @@
         
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
